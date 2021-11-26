@@ -9,7 +9,7 @@ import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
 import org.junit.jupiter.api.Test;
 
-public class OptionalTest {
+public class HamcrestExamplesTest {
 
     private static final String GIVEN_STRING = "given string";
 
@@ -31,7 +31,7 @@ public class OptionalTest {
             protected boolean matchesSafely(Optional<T> item) {
                 return item.isPresent() && expected.equals(item.get());
             }
-            
+
         };
     }
 }
