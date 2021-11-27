@@ -17,9 +17,16 @@ repositories {
 }
 
 dependencies {
+    // Lombok
+	compileOnly("org.projectlombok:lombok:1.18.22")
+	annotationProcessor("org.projectlombok:lombok:1.18.22")
+	
+	testCompileOnly("org.projectlombok:lombok:1.18.22")
+	testAnnotationProcessor("org.projectlombok:lombok:1.18.22")
+
     // Use JUnit Jupiter for testing.
     testImplementation("org.junit.jupiter:junit-jupiter:5.7.1")
-    testImplementation("org.hamcrest:hamcrest:2.2")
+    implementation("org.hamcrest:hamcrest:2.2")
     testImplementation("junit:junit:4.13")
 
     // This dependency is exported to consumers, that is to say found on their compile classpath.
