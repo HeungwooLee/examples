@@ -8,4 +8,4 @@
  */
 
 rootProject.name = "examples"
-include("lib")
+include("java")
