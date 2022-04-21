@@ -9,3 +9,4 @@
 
 rootProject.name = "examples"
 include("java")
+include("js")
